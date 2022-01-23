@@ -1,0 +1,2286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Ups.😮 Ceva nu a mers bine.😔</template>
+  </category>
+  
+  <category>
+        <pattern>^ <set>salutari</set> ^</pattern>
+        <template>
+            <image>assets/img/about/love.jpg</image>
+            <random>
+              <li>Salut.😁 </li>
+              <li>Buna.😊 </li>
+              <li>Hei.😀 </li>
+              <li>Hei, bine ai venit.😉 </li>
+              <li>Ciao, ma bucur sa te vad.😄 </li>
+              <li>Hello.😏 </li>
+              <li>Buna, ma bucur sa te vad.😇 </li>
+            </random>
+              Astazi o sa te ajut sa gasesti un muzeu de arta potrivit pentru preferintele tale! Ce miscare sau curent artistic te intereaza? 
+              <think><set name="topic">CURENTE</set></think>
+        </template>
+  </category>
+  
+  <!--TOPIC CURENTE-->
+  
+<topic name="CURENTE">
+  <category>
+      <!--<that>* MISCARE SAU CURENT ARTISTIC *</that>-->
+      <pattern>^ <set>curente</set> ^</pattern>
+      <template>
+          <think>
+          <set name="curent"><star index="2"/></set>
+          </think>
+             O alegere foarte buna! Acum te rog sa imi spui ce pictor corespunzator <map name="articulare"><star index="2"/></map> iti place cel mai mult.<think><set name="topic"><star index ="2"/></set></think>
+      </template>
+  </category>
+  
+  <category>
+      <!--<that>* MISCARE SAU CURENT ARTISTIC *</that>-->
+      <pattern>*</pattern>
+      <template>Imi pare rau, dar trebuie sa alegi intre:
+               <reply>
+                   <text>Modernism</text>
+                   <postback>MODERNISM</postback>
+               </reply>
+               <reply>
+                   <text>Impresionism</text>
+                   <postback>IMPRESIONISM</postback>
+               </reply>
+               <reply>
+                   <text>Expresionism</text>
+                   <postback>EXPRESIONISM</postback>
+               </reply>
+               <reply>
+                   <text>Simbolism</text>
+                   <postback>SIMBOLISM</postback>
+               </reply>
+               <reply>
+                   <text>Renascentism</text>
+                   <postback>RENASCENTISM</postback>
+               </reply>
+               <reply>
+                   <text>Baroc</text>
+                   <postback>BAROC</postback>
+               </reply>
+               <reply>
+                   <text>Cubism</text>
+                   <postback>CUBISM</postback>
+               </reply>
+               <reply>
+                   <text>Suprarealism</text>
+                   <postback>SUPRAREALISM</postback>
+               </reply>
+               <reply>
+                   <text>Realism</text>
+                   <postback>REALISM</postback>
+               </reply>
+               <reply>
+                   <text>Postimpresionism</text>
+                   <postback>POSTIMPRESIONISM</postback>
+               </reply>
+               <reply>
+                   <text>Neoclasicism</text>
+                   <postback>NEOCLASICISM</postback>
+               </reply>
+               <reply>
+                   <text>Romantism</text>
+                   <postback>ROMANTISM</postback>
+               </reply>
+               <reply>
+                   <text>Gotic</text>
+                   <postback>GOTIC</postback>
+               </reply>
+               <reply>
+                   <text>Clasicism</text>
+                   <postback>CLASICISM</postback>
+               </reply>
+        </template>
+  </category>
+ </topic>
+  
+  <!--TOPIC MODERNISM-->
+  
+  <topic name="MODERNISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Gustav Klimt"><srai>^ KLIMT ^</srai></li>
+                  <li value="Claude Monet"><srai>^ MONET ^</srai></li>
+                   <li>Imi pare rau, dar pictorii modernisti sunt:
+                       <reply>
+                           <text>Gustav Klimt</text>
+                           <postback>KLIMT</postback>
+                       </reply>
+                       <reply>
+                           <text>Claude Monet</text>
+                           <postback>MONET</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+    <category>
+      <pattern>^ KLIMT ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">KLIMT</set>
+                <set name="pictor">Klimt</set>
+            </think>
+            <image><map name="pictori">Gustav Klimt</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor austriac. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Austria</text>
+                        <postback>AUSTRIA</postback>
+                    </button>
+                    <button>
+                        <text>Cehia</text>
+                        <postback>CEHIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ MONET ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">MONET</set>
+                <set name="pictor">Monet</set>
+            </think>
+            <image><map name="pictori">Claude Monet</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor din Franta. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Belgia</text>
+                       <postback>Belgia</postback>
+                    </button>
+                    <button>
+                       <text>Cehia</text>
+                       <postback>CEHIA</postback>
+                    </button>
+                    <button>
+                       <text>Danemarca</text>
+                       <postback>DANEMARCA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Ungaria</text>
+                       <postback>UNGARIA</postback>
+                    </button>
+                    <button>
+                       <text>Tarile de Jos</text>
+                       <postback>TARILE DE JOS</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Suedia</text>
+                       <postback>SUEDIA</postback>
+                    </button>
+                    <button>
+                       <text>Elvetia</text>
+                       <postback>ELVETIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+  </topic>
+  
+   <!--TOPIC IMPRESIONISM-->
+  
+  <topic name="IMPRESIONISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Vincent Van Gogh"><srai>^ VAN GOGH ^</srai></li>
+                  <li value="Claude Monet"><srai>^ MONET ^</srai></li>
+                  <li value="Ion Andreescu"><srai>^ ANDREESCU ^</srai></li>
+                  <li value="Theodor Aman"><srai>^ AMAN ^</srai></li>
+                  <li value="Nicolae Grigorescu"><srai>^ GRIGORESCU ^</srai></li>
+                  <li value="Stefan Luchian"><srai>^ LUCHIAN ^</srai></li>
+                  <li value="Theodor Pallady"><srai>^ PALLADY ^</srai></li>
+                  <li value="Corneliu Baba"><srai>^ BABA ^</srai></li>
+                   <li>Imi pare rau, dar pictorii impresionisti sunt:
+                       <reply>
+                           <text>Vincent Van Gogh</text>
+                           <postback>VAN GOGH</postback>
+                       </reply>
+                       <reply>
+                           <text>Claude Monet</text>
+                           <postback>MONET</postback>
+                       </reply>
+                       <reply>
+                           <text>Ion Andreescu</text>
+                           <postback>ANDREESCU</postback>
+                       </reply>
+                       <reply>
+                           <text>Theodor Aman</text>
+                           <postback>AMAN</postback>
+                       </reply>
+                       <reply>
+                           <text>Nicolae Grigorescu</text>
+                           <postback>GRIGORESCU</postback>
+                       </reply>
+                       <reply>
+                           <text>Stefan Luchian</text>
+                           <postback>LUCHIAN</postback>
+                       </reply>
+                       <reply>
+                           <text>Theodor Pallady</text>
+                           <postback>PALLADY</postback>
+                       </reply>
+                       <reply>
+                           <text>Corneliu Baba</text>
+                           <postback>BABA</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+    <category>
+      <pattern>^ VAN GOGH ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">VAN GOGH</set>
+                <set name="pictor">VAN GOGH</set>
+            </think>
+            <image><map name="pictori">Vincent Van Gogh</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor olandez ale cărui lucrări au avut o influență profundă asupra artei secolului al XIX-lea, prin culorile lor vii și impactul emoțional.<break/> 
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Cehia</text>
+                        <postback>CEHIA</postback>
+                    </button>
+                    <button>
+                        <text>Finlanda</text>
+                        <postback>FINLANDA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Tarile de Jos</text>
+                       <postback>TARILE DE JOS</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Suedia</text>
+                       <postback>SUEDIA</postback>
+                    </button>
+                    <button>
+                       <text>Elvetia</text>
+                       <postback>ELVETIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ MONET ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">MONET</set>
+                <set name="pictor">Monet</set>
+            </think>
+            <image><map name="pictori">Claude Monet</map></image>
+            <delay>1</delay>
+                Acesta este un pictor din Franta. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Belgia</text>
+                       <postback>Belgia</postback>
+                    </button>
+                    <button>
+                       <text>Cehia</text>
+                       <postback>CEHIA</postback>
+                    </button>
+                    <button>
+                       <text>Danemarca</text>
+                       <postback>DANEMARCA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Ungaria</text>
+                       <postback>UNGARIA</postback>
+                    </button>
+                    <button>
+                       <text>Tarile de Jos</text>
+                       <postback>TARILE DE JOS</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Suedia</text>
+                       <postback>SUEDIA</postback>
+                    </button>
+                    <button>
+                       <text>Elvetia</text>
+                       <postback>ELVETIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ ANDREESCU ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">ANDREESCU</set>
+                <set name="pictor">ANDREESCU</set>
+            </think>
+            <image><map name="pictori">Ion Andreescu</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor și pedagog român. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ AMAN ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">AMAN</set>
+                <set name="pictor">AMAN</set>
+            </think>
+            <image><map name="pictori">Theodor Aman</map></image>
+            <delay>1</delay>
+                Acesta a fost pictor și grafician, pedagog și academician român, întemeietor al primelor școli românești de arte frumoase de la Iași și București.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ GRIGORESCU ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">GRIGORESCU</set>
+                <set name="pictor">GRIGORESCU</set>
+            </think>
+            <image><map name="pictori">Nicolae Grigorescu</map></image>
+            <delay>1</delay>
+                Acesta este primul dintre fondatorii picturii române moderne.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ LUCHIAN ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">LUCHIAN</set>
+                <set name="pictor">LUCHIAN</set>
+            </think>
+            <image><map name="pictori">Stefan Luchian</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor român, supranumit poetul plastic al florilor.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ PALLADY ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">PALLADY</set>
+                <set name="pictor">PALLADY</set>
+            </think>
+            <image><map name="pictori">Theodor Pallady</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor român.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ BABA ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">BABA</set>
+                <set name="pictor">BABA</set>
+            </think>
+            <image><map name="pictori">Corneliu Baba</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor român, cunoscut mai ales pentru portretele sale.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+  </topic>
+  
+  <!--TOPIC EXPRESIONISM-->
+  
+  <topic name="EXPRESIONISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Vincent Van Gogh"><srai>^ VAN GOGH ^</srai></li>
+                  <li value="Nicolae Tonitza"><srai>^ TONITZA ^</srai></li>
+                  <li value="Corneliu Baba"><srai>^ BABA ^</srai></li>
+                   <li>Imi pare rau, dar pictorii expresionisti sunt:
+                       <reply>
+                           <text>Vincent Van Gogh</text>
+                           <postback>VAN GOGH</postback>
+                       </reply>
+                       <reply>
+                           <text>Nicolae Tonitza</text>
+                           <postback>TONITZA</postback>
+                       </reply>
+                       <reply>
+                           <text>Corneliu Baba</text>
+                           <postback>BABA</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+    <category>
+      <pattern>^ VAN GOGH ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">VAN GOGH</set>
+                <set name="pictor">VAN GOGH</set>
+            </think>
+            <image><map name="pictori">Vincent Van Gogh</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor olandez ale cărui lucrări au avut o influență profundă asupra artei secolului al XIX-lea, prin culorile lor vii și impactul emoțional. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Cehia</text>
+                        <postback>CEHIA</postback>
+                    </button>
+                    <button>
+                        <text>Finlanda</text>
+                        <postback>FINLANDA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Tarile de Jos</text>
+                       <postback>TARILE DE JOS</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Suedia</text>
+                       <postback>SUEDIA</postback>
+                    </button>
+                    <button>
+                       <text>Elvetia</text>
+                       <postback>ELVETIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ TONITZA ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">TONITZA</set>
+                <set name="pictor">TONITZA</set>
+            </think>
+            <image><map name="pictori">Nicolae Tonitza</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor și grafician român, interpret al "tristețelor luxuriant colorate".<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ BABA ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">BABA</set>
+                <set name="pictor">BABA</set>
+            </think>
+            <image><map name="pictori">Corneliu Baba</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor român, cunoscut mai ales pentru portretele sale.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+  </topic>
+  
+  <!--TOPIC SIMBOLISM-->
+  
+  <topic name="SIMBOLISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Gustav Klimt"><srai>^ KLIMT ^</srai></li>
+                  <li value="Vincent Van Gogh"><srai>^ VAN GOGH ^</srai></li>
+                  <li value="Stefan Luchian"><srai>^ LUCHIAN ^</srai></li>
+                   <li>Imi pare rau, dar pictorii simbolisti sunt:
+                       <reply>
+                           <text>Gustav Klimt</text>
+                           <postback>KLIMT</postback>
+                       </reply>
+                       <reply>
+                           <text>Vincent Van Gogh</text>
+                           <postback>VAN GOGH</postback>
+                       </reply>
+                       <reply>
+                           <text>Stefan Luchian</text>
+                           <postback>LUCHIAN</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+    <category>
+      <pattern>^ KLIMT ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">KLIMT</set>
+                <set name="pictor">Klimt</set>
+            </think>
+            <image><map name="pictori">Gustav Klimt</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor austriac. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Austria</text>
+                        <postback>AUSTRIA</postback>
+                    </button>
+                    <button>
+                        <text>Cehia</text>
+                        <postback>CEHIA</postback>
+                    </button>
+        </template>
+    </category> 
+      
+    <category>
+      <pattern>^ VAN GOGH ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">VAN GOGH</set>
+                <set name="pictor">VAN GOGH</set>
+            </think>
+            <image><map name="pictori">Vincent Van Gogh</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor olandez ale cărui lucrări au avut o influență profundă asupra artei secolului al XIX-lea, prin culorile lor vii și impactul emoțional. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Cehia</text>
+                        <postback>CEHIA</postback>
+                    </button>
+                    <button>
+                        <text>Finlanda</text>
+                        <postback>FINLANDA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Tarile de Jos</text>
+                       <postback>TARILE DE JOS</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Suedia</text>
+                       <postback>SUEDIA</postback>
+                    </button>
+                    <button>
+                       <text>Elvetia</text>
+                       <postback>ELVETIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ LUCHIAN ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">LUCHIAN</set>
+                <set name="pictor">LUCHIAN</set>
+            </think>
+            <image><map name="pictori">Stefan Luchian</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor român, supranumit poetul plastic al florilor.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+  </topic>
+  
+  <!--TOPIC RENASCENTISM-->
+  
+  <topic name="RENASCENTISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Titian"><srai>^ TITIAN ^</srai></li>
+                  <li value="Michelangelo"><srai>^ MICHELANGELO ^</srai></li>
+                  <li value="Raphael"><srai>^ RAPHAEL ^</srai></li>
+                  <li value="Leonardo da Vinci"><srai>^ DA VINCI ^</srai></li>
+                  <li value="Jacopo Bassano"><srai>^ BASSANO ^</srai></li>
+                  <li value="Tintoretto"><srai>^ TINTORETTO ^</srai></li>
+                  <li value="Paolo Veronese"><srai>^ VERONESE ^</srai></li>
+                  <li value="Lucas Cranach"><srai>^ CRANACH ^</srai></li>
+                  <li value="Hieronymus Bosch"><srai>^ BOSCH ^</srai></li>
+                  <li value="Lorenzo Lotto"><srai>^ LOTTO ^</srai></li>
+                  <li value="El Greco"><srai>^ GRECO ^</srai></li>
+                   <li>Imi pare rau, dar pictorii renascentisti sunt:
+                       <reply>
+                           <text>Titian</text>
+                           <postback>TITIAN</postback>
+                       </reply>
+                       <reply>
+                           <text>Michelangelo</text>
+                           <postback>MICHELANGELO</postback>
+                       </reply>
+                       <reply>
+                           <text>Raphael</text>
+                           <postback>RAPHAEL</postback>
+                       </reply>
+                       <reply>
+                           <text>Leonardo da Vinci</text>
+                           <postback>DA VINCI</postback>
+                       </reply>
+                       <reply>
+                           <text>Jacopo Bassano</text>
+                           <postback>BASSANO</postback>
+                       </reply>
+                       <reply>
+                           <text>Tintoretto</text>
+                           <postback>TINTORETTO</postback>
+                       </reply>
+                       <reply>
+                           <text>Paolo Veronese</text>
+                           <postback>VERONESE</postback>
+                       </reply>
+                       <reply>
+                           <text>Lucas Cranach</text>
+                           <postback>CRANACH</postback>
+                       </reply>
+                       <reply>
+                           <text>Hieronymus Bosch</text>
+                           <postback>BOSCH</postback>
+                       </reply>
+                       <reply>
+                           <text>Lorenzo Lotto</text>
+                           <postback>LOTTO</postback>
+                       </reply>
+                       <reply>
+                           <text>El Greco</text>
+                           <postback>GRECO</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+    <category>
+      <pattern>^ TITIAN ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">TITIAN</set>
+                <set name="pictor">TITIAN</set>
+            </think>
+            <image><map name="pictori">Titian</map></image>
+            <delay>1</delay>
+                Acesta a fost un vestit pictor italian din secolul al XVI-lea. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Austria</text>
+                        <postback>AUSTRIA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+                    <button>
+                       <text>Ucraina</text>
+                       <postback>UCRAINA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ MICHELANGELO ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">MICHELANGELO</set>
+                <set name="pictor">MICHELANGELO</set>
+            </think>
+            <image><map name="pictori">Michelangelo</map></image>
+            <delay>1</delay>
+                Acesta a fost unul dintre cei mai importanti artisti în perioada de vârf a Renașterii Italiene. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ RAPHAEL ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">RAPHAEL</set>
+                <set name="pictor">RAPHAEL</set>
+            </think>
+            <image><map name="pictori">Raphael</map></image>
+            <delay>1</delay>
+                Acesta a fost unul din cei mai mari artiști ai tuturor timpurilor. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Portugalia</text>
+                       <postback>PORTUGALIA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ DA VINCI ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">DA VINCI</set>
+                <set name="pictor">DA VINCI</set>
+            </think>
+            <image><map name="pictori">Leonardo da Vinci</map></image>
+            <delay>1</delay>
+                Acesta este considerat adesea cel mai de seamă geniu din întreaga istorie a omenirii.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Polonia</text>
+                       <postback>POLONIA</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ BASSANO ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">BASSANO</set>
+                <set name="pictor">BASSANO</set>
+            </think>
+            <image><map name="pictori">Jacopo Bassano</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor italian.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>Franta</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ TINTORETTO ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">TINTORETTO</set>
+                <set name="pictor">TINTORETTO</set>
+            </think>
+            <image><map name="pictori">Tintoretto</map></image>
+            <delay>1</delay>
+                Acesta a fost unul dintre cei mai mari reprezentanți ai școlii venețiene de pictură.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Polonia</text>
+                       <postback>POLONIA</postback>
+                    </button>
+                    <button>
+                       <text>Portugalia</text>
+                       <postback>PORTUGALIA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ VERONESE ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">VERONESE</set>
+                <set name="pictor">VERONESE</set>
+            </think>
+            <image><map name="pictori">Paolo Veronese</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor italian.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ CRANACH ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">CRANACH</set>
+                <set name="pictor">CRANACH</set>
+            </think>
+            <image><map name="pictori">Lucas Cranach</map></image>
+            <delay>1</delay>
+                Acesta a fost unul dintre cei mai de seamă pictori germani.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Polonia</text>
+                       <postback>POLONIA</postback>
+                    </button>
+                    <button>
+                       <text>Portugalia</text>
+                       <postback>PORTUGALIA</postback>
+                    </button>
+                     <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ BOSCH ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">BOSCH</set>
+                <set name="pictor">BOSCH</set>
+            </think>
+            <image><map name="pictori">Hieronymus Bosch</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor neerlandez, a cărui operă fantastică și grotescă ilustrează în principal păcatul și decăderea umană.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Belgia</text>
+                       <postback>BELGIA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Portugalia</text>
+                       <postback>PORTUGALIA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ LOTTO ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">LOTTO</set>
+                <set name="pictor">LOTTO</set>
+            </think>
+            <image><map name="pictori">Lorenzo Lotto</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor, desenator și grafician italian.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Polonia</text>
+                       <postback>POLONIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ GRECO ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">GRECO</set>
+                <set name="pictor">GRECO</set>
+            </think>
+            <image><map name="pictori">El Greco</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor spaniol de origine greacă, cunoscut mai ales datorită picturilor sale pe teme religioase și ca portretist.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Grecia</text>
+                       <postback>GRECIA</postback>
+                    </button>
+                     <button>
+                       <text>Ungaria</text>
+                       <postback>UNGARIA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                     <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+  </topic>
+  
+  <!--TOPIC BAROC-->
+  
+  <topic name="BAROC">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Anthony van Dyck"><srai>^ DYCK ^</srai></li>
+                  <li value="Jacob Jordaens"><srai>^ JORDAENS ^</srai></li>
+                  <li value="Rembrandt"><srai>^ REMBRANDT ^</srai></li>
+                  <li value="Peter Paul Rubens"><srai>^ RUBENS ^</srai></li>
+                  <li value="Bartolome Esteban Murillo"><srai>^ MURILLO ^</srai></li>
+                  <li value="Nicolas Poussin"><srai>^ POUSSIN ^</srai></li>
+                  <li value="Rosalba Carriera"><srai>^ CARRIERA ^</srai></li>
+                   <li>Imi pare rau, dar pictorii stilului baroc sunt:
+                       <reply>
+                           <text>Anthony van Dyck</text>
+                           <postback>DYCK</postback>
+                       </reply>
+                       <reply>
+                           <text>Jacob Jordaens</text>
+                           <postback>JORDAENS</postback>
+                       </reply>
+                       <reply>
+                           <text>Rembrandt</text>
+                           <postback>REMBRANDT</postback>
+                       </reply>
+                       <reply>
+                           <text>Peter Paul Rubens</text>
+                           <postback>RUBENS</postback>
+                       </reply>
+                       <reply>
+                           <text>Bartolome Esteban Murillo</text>
+                           <postback>MURILLO</postback>
+                       </reply>
+                       <reply>
+                           <text>Nicolas Poussin</text>
+                           <postback>POUSSIN</postback>
+                       </reply>
+                       <reply>
+                           <text>Rosalba Carriera</text>
+                           <postback>CARRIERA</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+    <category>
+      <pattern>^ DYCK ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">DYCK</set>
+                <set name="pictor">DYCK</set>
+            </think>
+            <image><map name="pictori">Anthony van Dyck</map></image>
+            <delay>1</delay>
+                Acesta a fost unul dintre cei mai mari pictori și creatori de gravuri flamanzi. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Belgia</text>
+                        <postback>BELGIA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Polonia</text>
+                       <postback>POLONIA</postback>
+                    </button>
+                    <button>
+                       <text>Portugalia</text>
+                       <postback>PORTUGALIA</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ JORDAENS ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">JORDAENS</set>
+                <set name="pictor">JORDAENS</set>
+            </think>
+            <image><map name="pictori">Jacob Jordaens</map></image>
+            <delay>1</delay>
+                Acesta a jucat un rol important în evoluția picturii flamande a secolului al XVII-lea. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Belgia</text>
+                        <postback>BELGIA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Polonia</text>
+                       <postback>POLONIA</postback>
+                    </button>
+                    <button>
+                       <text>Suedia</text>
+                       <postback>SUEDIA</postback>
+                    </button>
+                    <button>
+                       <text>Ucraina</text>
+                       <postback>UCRAINA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ REMBRANDT ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">REMBRANDT</set>
+                <set name="pictor">REMBRANDT</set>
+            </think>
+            <image><map name="pictori">Rembrandt</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor și gravor olandez din secolul al XVII-lea, considerat unul din cei mai mari pictori din istoria artei. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Austria</text>
+                        <postback>AUSTRIA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Tarile de Jos</text>
+                       <postback>TARILE DE JOS</postback>
+                    </button>
+                    <button>
+                       <text>Polonia</text>
+                       <postback>POLONIA</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+                    <button>
+                       <text>Suedia</text>
+                       <postback>SUEDIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ RUBENS ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">RUBENS</set>
+                <set name="pictor">RUBENS</set>
+            </think>
+            <image><map name="pictori">Peter Paul Rubens</map></image>
+            <delay>1</delay>
+                Acesta a fost cel mai renumit pictor flamand. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Belgia</text>
+                        <postback>BELGIA</postback>
+                    </button>
+                    <button>
+                        <text>Croatia</text>
+                        <postback>Croatia</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Tarile de Jos</text>
+                       <postback>TARILE DE JOS</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+                    <button>
+                       <text>Ucraina</text>
+                       <postback>UCRAINA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ MURILLO ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">MURILLO</set>
+                <set name="pictor">MURILLO</set>
+            </think>
+            <image><map name="pictori">Bartolome Esteban Murillo</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor spaniol din sec. al XVII-lea. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ POUSSIN ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">POUSSIN</set>
+                <set name="pictor">POUSSIN</set>
+            </think>
+            <image><map name="pictori">Nicolas Poussin</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor francez.<break/> 
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Portugalia</text>
+                       <postback>PORTUGALIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ CARRIERA ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">CARRIERA</set>
+                <set name="pictor">CARRIERA</set>
+            </think>
+            <image><map name="pictori">Rosalba Carriera</map></image>
+            <delay>1</delay>
+                Acesta Rosalba Carriera a fost un pictor rococian venețian.<break/> 
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+  </topic>
+  
+  <!--TOPIC CUBISM-->
+  
+  <topic name="CUBISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Pablo Picasso"><srai>^ PICASSO ^</srai></li>
+                   <li>Imi pare rau, dar pictorii cubisti sunt:
+                       <reply>
+                           <text>Pablo Picasso</text>
+                           <postback>PICASSO</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+    <category>
+      <pattern>^ PICASSO ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">PICASSO</set>
+                <set name="pictor">PICASSO</set>
+            </think>
+            <image><map name="pictori">Pablo Picasso</map></image>
+            <delay>1</delay>
+                Acesta a fost un artist plastic spaniol. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Bulgaria</text>
+                        <postback>BULGARIA</postback>
+                    </button>
+                    <button>
+                       <text>Cehia</text>
+                       <postback>CEHIA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+                    <button>
+                       <text>Suedia</text>
+                       <postback>SUEDIA</postback>
+                    </button>
+                    <button>
+                       <text>Elvetia</text>
+                       <postback>ELVETIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+  </topic>
+  
+  <!--TOPIC SUPRAREALISM-->
+  
+  <topic name="SUPRAREALISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Joan Miro"><srai>^ MIRO ^</srai></li>
+                  <li value="Pablo Picasso"><srai>^ PICASSO ^</srai></li>
+                   <li>Imi pare rau, dar pictorii suprarealisti sunt:
+                        <reply>
+                           <text>Joan Miro</text>
+                           <postback>MIRO</postback>
+                       </reply>
+                       <reply>
+                           <text>Pablo Picasso</text>
+                           <postback>PICASSO</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+    <category>
+      <pattern>^ MIRO ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">MIRO</set>
+                <set name="pictor">MIRO</set>
+            </think>
+            <image><map name="pictori">Joan Miro</map></image>
+            <delay>1</delay>
+                Acesta va rămâne un creator multidimensional și multilateral: pictează, dar și sculptează și stăpânește în aceeași măsură tehnica ceramicei. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Bulgaria</text>
+                        <postback>BULGARIA</postback>
+                    </button>
+                    <button>
+                       <text>Croatia</text>
+                       <postback>CROATIA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+      
+    <category>
+      <pattern>^ PICASSO ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">PICASSO</set>
+                <set name="pictor">PICASSO</set>
+            </think>
+            <image><map name="pictori">Pablo Picasso</map></image>
+            <delay>1</delay>
+                Acesta a fost un artist plastic spaniol. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Bulgaria</text>
+                        <postback>BULGARIA</postback>
+                    </button>
+                    <button>
+                       <text>Cehia</text>
+                       <postback>CEHIA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+                    <button>
+                       <text>Suedia</text>
+                       <postback>SUEDIA</postback>
+                    </button>
+                    <button>
+                       <text>Elvetia</text>
+                       <postback>ELVETIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+  </topic>
+  
+  <!--TOPIC REALISM-->
+  
+  <topic name="REALISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Claude Monet"><srai>^ MONET ^</srai></li>
+                  <li value="Nicolae Grigorescu"><srai>^ GRIGORESCU ^</srai></li>
+                   <li>Imi pare rau, dar pictorii realisti sunt:
+                        <reply>
+                           <text>Claude Monet</text>
+                           <postback>MONET</postback>
+                       </reply>
+                       <reply>
+                           <text>Nicolae Grigorescu</text>
+                           <postback>GRIGORESCU</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+      <category>
+      <pattern>^ MONET ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">MONET</set>
+                <set name="pictor">Monet</set>
+            </think>
+            <image><map name="pictori">Claude Monet</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor din Franta.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Belgia</text>
+                       <postback>Belgia</postback>
+                    </button>
+                    <button>
+                       <text>Cehia</text>
+                       <postback>CEHIA</postback>
+                    </button>
+                    <button>
+                       <text>Danemarca</text>
+                       <postback>DANEMARCA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Ungaria</text>
+                       <postback>UNGARIA</postback>
+                    </button>
+                    <button>
+                       <text>Tarile de Jos</text>
+                       <postback>TARILE DE JOS</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Suedia</text>
+                       <postback>SUEDIA</postback>
+                    </button>
+                    <button>
+                       <text>Elvetia</text>
+                       <postback>ELVETIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ GRIGORESCU ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">GRIGORESCU</set>
+                <set name="pictor">GRIGORESCU</set>
+            </think>
+            <image><map name="pictori">Nicolae Grigorescu</map></image>
+            <delay>1</delay>
+                Acesta este primul dintre fondatorii picturii române moderne.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+  </topic>
+  
+  <!--TOPIC POSTIMPRESIONISM-->
+  
+  <topic name="POSTIMPRESIONISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Vincent Van Gogh"><srai>^ VAN GOGH ^</srai></li>
+                  <li value="Stefan Luchian"><srai>^ LUCHIAN ^</srai></li>
+                  <li value="Nicolae Tonitza"><srai>^ TONITZA ^</srai></li>
+                  <li value="Corneliu Baba"><srai>^ BABA ^</srai></li>
+                   <li>Imi pare rau, dar pictorii postimpresionisti sunt:
+                        <reply>
+                           <text>Vincent Van Gogh</text>
+                           <postback>VAN GOGH</postback>
+                       </reply>
+                       <reply>
+                           <text>Stefan Luchian</text>
+                           <postback>LUCHIAN</postback>
+                       </reply>
+                       <reply>
+                           <text>Nicolae Tonitza</text>
+                           <postback>TONITZA</postback>
+                       </reply>
+                       <reply>
+                           <text>Corneliu Baba</text>
+                           <postback>BABA</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+      <category>
+      <pattern>^ VAN GOGH ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">VAN GOGH</set>
+                <set name="pictor">VAN GOGH</set>
+            </think>
+            <image><map name="pictori">Vincent Van Gogh</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor olandez ale cărui lucrări au avut o influență profundă asupra artei secolului al XIX-lea, prin culorile lor vii și impactul emoțional. <break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                        <text>Cehia</text>
+                        <postback>CEHIA</postback>
+                    </button>
+                    <button>
+                        <text>Finlanda</text>
+                        <postback>FINLANDA</postback>
+                    </button>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Tarile de Jos</text>
+                       <postback>TARILE DE JOS</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+                    <button>
+                       <text>Suedia</text>
+                       <postback>SUEDIA</postback>
+                    </button>
+                    <button>
+                       <text>Elvetia</text>
+                       <postback>ELVETIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ LUCHIAN ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">LUCHIAN</set>
+                <set name="pictor">LUCHIAN</set>
+            </think>
+            <image><map name="pictori">Stefan Luchian</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor român, supranumit poetul plastic al florilor.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ TONITZA ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">TONITZA</set>
+                <set name="pictor">TONITZA</set>
+            </think>
+            <image><map name="pictori">Nicolae Tonitza</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor și grafician român, interpret al "tristețelor luxuriant colorate".<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ BABA ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">BABA</set>
+                <set name="pictor">BABA</set>
+            </think>
+            <image><map name="pictori">Corneliu Baba</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor român, cunoscut mai ales pentru portretele sale.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+  </topic>
+  
+  <!--TOPIC NEOCLASICISM-->
+  
+  <topic name="NEOCLASICISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Jacques-Louis David"><srai>^ DAVID ^</srai></li>
+                   <li>Imi pare rau, dar pictorii neoclasici sunt:
+                        <reply>
+                           <text>Jacques-Louis David</text>
+                           <postback>DAVID</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+      <category>
+      <pattern>^ DAVID ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">DAVID</set>
+                <set name="pictor">DAVID</set>
+            </think>
+            <image><map name="pictori">Jacques-Louis David</map></image>
+            <delay>1</delay>
+                Acesta a fost unul dintre cei mai influenți pictori francezi.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Italia</text>
+                       <postback>ITALIA</postback>
+                    </button>
+        </template>
+    </category> 
+  </topic>
+  
+  <!--TOPIC ROMANTISM-->
+  
+  <topic name="ROMANTISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Eugene Delacroix"><srai>^ DELACROIX ^</srai></li>
+                  <li value="Theodor Aman"><srai>^ AMAN ^</srai></li>
+                  <li value="Francisco de Goya"><srai>^ GOYA ^</srai></li>
+                   <li>Imi pare rau, dar pictorii romantici sunt:
+                        <reply>
+                           <text>Eugene Delacroix</text>
+                           <postback>DELACROIX</postback>
+                       </reply>
+                       <reply>
+                           <text>Theodor Aman</text>
+                           <postback>AMAN</postback>
+                       </reply>
+                       <reply>
+                           <text>Francisco de Goya</text>
+                           <postback>GOYA</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+      <category>
+      <pattern>^ DELACROIX ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">DELACROIX</set>
+                <set name="pictor">DELACROIX</set>
+            </think>
+            <image><map name="pictori">Eugene Delacroix</map></image>
+            <delay>1</delay>
+                Acesta a fost un important pictor francez.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Serbia</text>
+                       <postback>SERBIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ AMAN ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">AMAN</set>
+                <set name="pictor">AMAN</set>
+            </think>
+            <image><map name="pictori">Theodor Aman</map></image>
+            <delay>1</delay>
+                Acesta a fost pictor și grafician, pedagog și academician român, întemeietor al primelor școli românești de arte frumoase de la Iași și București.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+    
+    <category>
+      <pattern>^ GOYA ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">GOYA</set>
+                <set name="pictor">GOYA</set>
+            </think>
+            <image><map name="pictori">Francisco de Goya</map></image>
+            <delay>1</delay>
+                Acesta a fost un important pictor și creator de gravuri spaniol.<break/>
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Franta</text>
+                       <postback>FRANTA</postback>
+                    </button>
+                    <button>
+                       <text>Germania</text>
+                       <postback>GERMANIA</postback>
+                    </button>
+                    <button>
+                       <text>Ungaria</text>
+                       <postback>UNGARIA</postback>
+                    </button>
+                    <button>
+                       <text>Rusia</text>
+                       <postback>RUSIA</postback>
+                    </button>
+                    <button>
+                       <text>Spania</text>
+                       <postback>SPANIA</postback>
+                    </button>
+                    <button>
+                       <text>Regatul Unit</text>
+                       <postback>REGATUL UNIT</postback>
+                    </button>
+        </template>
+    </category> 
+  </topic>
+  
+  <!--TOPIC GOTIC-->
+  
+  <topic name="GOTIC">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Domenico Veneziano"><srai>^ VENEZIANO ^</srai></li>
+                   <li>Imi pare rau, dar pictorii gotici sunt:
+                        <reply>
+                           <text>Domenico Veneziano</text>
+                           <postback>VENEZIANO</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+      <category>
+      <pattern>^ VENEZIANO ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">VENEZIANO</set>
+                <set name="pictor">VENEZIANO</set>
+            </think>
+            <image><map name="pictori">Domenico Veneziano</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor italian. In urmatoarele tari vei gasi picturile lui faimoase.<break/> 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+  </topic>
+  
+  <!--TOPIC CLASICISM-->
+  
+  <topic name="CLASICISM">
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name="pictor"><star/></set></think>
+              <condition name="pictor">
+                  <li value="Misu Popp"><srai>^ POPP ^</srai></li>
+                   <li>Imi pare rau, dar pictorii clasici sunt:
+                        <reply>
+                           <text>Misu Popp</text>
+                           <postback>POPP</postback>
+                       </reply>
+                   </li>
+              </condition>
+          </template>
+      </category>
+      
+      <category>
+      <pattern>^ POPP ^</pattern>
+        <template> 
+            <think>
+                <set name="topic">POPP</set>
+                <set name="pictor">POPP</set>
+            </think>
+            <image><map name="pictori">Misu Popp</map></image>
+            <delay>1</delay>
+                Acesta a fost un pictor român, reprezentant al academismului românesc, care s-a remarcat în domeniul portretisticii și al picturii bisericești.<break/> 
+                In urmatoarele tari vei gasi picturile lui faimoase. 
+                Te rog sa alegi o tara pe care ai dori s-o vizitezi.
+            <delay>1</delay>
+                    <button>
+                       <text>Romania</text>
+                       <postback>ROMANIA</postback>
+                    </button>
+        </template>
+    </category> 
+  </topic>
+</aiml>
+

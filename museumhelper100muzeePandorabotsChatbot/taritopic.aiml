@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<!-- TOPIC TARI-->
+  
+    <topic name="TARI">
+        
+        <category>
+            <pattern>^ AUSTRIA ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                       <image>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Leopold_Museum_%28Vienna%29.jpg/450px-Leopold_Museum_%28Vienna%29.jpg</image>
+                       <title>Leopold Museum</title>
+                       <subtitle>Viena</subtitle>
+                       <button>
+                           <text>Apasa pentru a afla mai multe! 😊</text>
+                           <url><map name="linkmuzeu">Leopold Museum</map></url>
+                       </button>
+                    </card>
+                    
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg/330px-Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg</image>
+                   <title>Kunsthistorisches Museum</title>
+                   <subtitle>Viena</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Kunsthistorisches Museum</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://www.divento.com/13249/the-residenzgalerie-salzburg-tickets.jpg</image>
+                   <title>Residenzgalerie</title>
+                   <subtitle>SALZBURG</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Residenzgalerie</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Lentos_nacht.jpg/330px-Lentos_nacht.jpg</image>
+                   <title>Lentos Art Museum</title>
+                   <subtitle>Linz</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Lentos Art Museum</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Graz_Altes_Joanneum.jpg/330px-Graz_Altes_Joanneum.jpg</image>
+                   <title>Universalmuseum Joanneum</title>
+                   <subtitle>Graz</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Universalmuseum Joanneum</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Belgia ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mus%C3%A9es_Royaux_des_Beaux-Arts_Belgique_1101.jpg/375px-Mus%C3%A9es_Royaux_des_Beaux-Arts_Belgique_1101.jpg</image>
+                   <title>Royal Museums of Fine Arts</title>
+                   <subtitle>Bruxelles</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Royal Museums of Fine Arts</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Brugge_-_Dijver_12_-Voormalig_poortgebouw_van_de_proosdij_van_Onze-Lieve-Vrouw%2C_heden_ingang_van_het_Groeningemuseum_-_82339.jpg/330px-Brugge_-_Dijver_12_-Voormalig_poortgebouw_van_de_proosdij_van_Onze-Lieve-Vrouw%2C_heden_ingang_van_het_Groeningemuseum_-_82339.jpg</image>
+                   <title>Groeningemuseum</title>
+                   <subtitle>Bruges</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Groeningemuseum</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Koninklijk_Museum_voor_Schone_Kunsten_%28Antwerpen%29.jpg/330px-Koninklijk_Museum_voor_Schone_Kunsten_%28Antwerpen%29.jpg</image>
+                   <title>Royal Museum of Fine Arts Antwerp</title>
+                   <subtitle>Antwerp</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Royal Museum of Fine Arts Antwerp</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Museum_voor_schone_kunsten_gent.jpg/450px-Museum_voor_schone_kunsten_gent.jpg</image>
+                   <title>Museum of Fine Arts Ghent</title>
+                   <subtitle>Ghent</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museum of Fine Arts Ghent</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Tournai%2C_rue_Saint_Martin_straatzicht1_foto2_2013-05-09_09.43.jpg/360px-Tournai%2C_rue_Saint_Martin_straatzicht1_foto2_2013-05-09_09.43.jpg</image>
+                   <title>Musée des Beaux-Arts Tournai</title>
+                   <subtitle>Tournai</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée des Beaux-Arts Tournai</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Bulgaria ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Gallery_for_Foreign_Art_TodorBozhinov_041009.jpg/300px-Gallery_for_Foreign_Art_TodorBozhinov_041009.jpg</image>
+                   <title>National Gallery for Foreign Art</title>
+                   <subtitle>Sofia</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">National Gallery for Foreign Art</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Cehia ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Praha_Veletr%C5%BEn%C3%AD_pal%C3%A1c_jih.jpg/330px-Praha_Veletr%C5%BEn%C3%AD_pal%C3%A1c_jih.jpg</image>
+                   <title>National Gallery Prague</title>
+                   <subtitle>Praga</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">National Gallery Prague</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Croatia ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Pabell%C3%B3n_del_Arte%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_01.JPG/330px-Pabell%C3%B3n_del_Arte%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_01.JPG</image>
+                   <title>Art Pavilion in Zagreb</title>
+                   <subtitle>Zagreb</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Art Pavilion in Zagreb</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Split_-_Gallery_of_Fine_Arts.JPG/330px-Split_-_Gallery_of_Fine_Arts.JPG</image>
+                   <title>Museum of Fine Arts Split</title>
+                   <subtitle>Split</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museum of Fine Arts Split</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Danemarca ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://live.staticflickr.com/875/40746847974_86e08cfaed_b.jpg</image>
+                   <title>Louisiana Museum of Modern Art</title>
+                   <subtitle>Fredensborg</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Louisiana Museum of Modern Art</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Finlanda ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Helsinki_July_2013-26a.jpg/450px-Helsinki_July_2013-26a.jpg</image>
+                   <title>Ateneum Art Museum</title>
+                   <subtitle>Helsinki</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Ateneum Art Museum</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ FRANTA ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Louvre_2007_02_24_c.jpg/420px-Louvre_2007_02_24_c.jpg</image>
+                   <title>Musée du Louvre</title>
+                   <subtitle>Paris</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée du Louvre</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Mus%C3%A9e_d%27Orsay_2013.JPG/420px-Mus%C3%A9e_d%27Orsay_2013.JPG</image>
+                   <title>Musee d'Orsay</title>
+                   <subtitle>Paris</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musee d'Orsay</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/MBA_Lyon_facade_nuit.jpg/300px-MBA_Lyon_facade_nuit.jpg</image>
+                   <title>Museum of Fine Arts of Lyon</title>
+                   <subtitle>Lyon</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museum of Fine Arts of Lyon</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Caen_-_Musee_Beaux_Arts_1.jpg/1200px-Caen_-_Musee_Beaux_Arts_1.jpg</image>
+                   <title>Musée des Beaux-Arts de Caen</title>
+                   <subtitle>Caen</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée des Beaux-Arts de Caen</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Villa_Thomson_03.jpg/330px-Villa_Thomson_03.jpg</image>
+                   <title>Musée des Beaux-Arts de Nice</title>
+                   <subtitle>Nice</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée des Beaux-Arts de Nice</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Le_Palais_des_Rohans.jpg/450px-Le_Palais_des_Rohans.jpg</image>
+                   <title>Musée des Beaux-Arts de Strasbourg</title>
+                   <subtitle>Strasbourg</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée des Beaux-Arts de Strasbourg</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Mus%C3%A9e_des_Augustin%2C_l%27aile_Darcy_-_Viollet-le-duc.jpg/375px-Mus%C3%A9e_des_Augustin%2C_l%27aile_Darcy_-_Viollet-le-duc.jpg</image>
+                   <title>Musée des Augustins de Toulouse</title>
+                   <subtitle>Toulouse</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée des Augustins de Toulouse</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Panoramique_palais_duc_de_Bourgogne.jpg/330px-Panoramique_palais_duc_de_Bourgogne.jpg</image>
+                   <title>Musée des Beaux-Arts de Dijon</title>
+                   <subtitle>Dijon</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée des Beaux-Arts de Dijon</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Avignon_petit_palais.JPG/420px-Avignon_petit_palais.JPG</image>
+                   <title>Musée du Petit Palais</title>
+                   <subtitle>Avignon</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée du Petit Palais</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Beaux_arts_bordeaux.jpg/330px-Beaux_arts_bordeaux.jpg</image>
+                   <title>Musée des Beaux-Arts de Bordeaux</title>
+                   <subtitle>Bordeaux</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée des Beaux-Arts de Bordeaux</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Musee_Grenoble.JPG/375px-Musee_Grenoble.JPG</image>
+                   <title>Museum of Grenoble</title>
+                   <subtitle>Grenoble</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museum of Grenoble</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Louvre-Lens-night.jpg/330px-Louvre-Lens-night.jpg</image>
+                   <title>Louvre-Lens</title>
+                   <subtitle>Lens</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Louvre-Lens</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Lille_palais_des_beaux_arts.jpg/375px-Lille_palais_des_beaux_arts.jpg</image>
+                   <title>Palais des Beaux-Arts de Lille</title>
+                   <subtitle>Lille</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Palais des Beaux-Arts de Lille</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Metz_%28F%29_-_Centre_Pompidou_-_Au%C3%9Fenansicht.jpg/360px-Metz_%28F%29_-_Centre_Pompidou_-_Au%C3%9Fenansicht.jpg</image>
+                   <title>Centre Pompidou-Metz</title>
+                   <subtitle>Metz</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Centre Pompidou-Metz</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Montauban_-_Le_Mus%C3%A9e_Ingres.jpg/330px-Montauban_-_Le_Mus%C3%A9e_Ingres.jpg</image>
+                   <title>Musée Ingres</title>
+                   <subtitle>Montauban</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée Ingres</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Musee_Fabre.jpg/375px-Musee_Fabre.jpg</image>
+                   <title>Musée Fabre</title>
+                   <subtitle>Montpellier</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée Fabre</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Nancy_Musee_des_Beaux-Arts_BW_2015-07-18_13-55-20.jpg/330px-Nancy_Musee_des_Beaux-Arts_BW_2015-07-18_13-55-20.jpg</image>
+                   <title>Museum of Fine Arts of Nancy</title>
+                   <subtitle>Nancy</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museum of Fine Arts of Nancy</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Nantes-mus%C3%A9eBeauxArts.jpg/270px-Nantes-mus%C3%A9eBeauxArts.jpg</image>
+                   <title>Fine Arts Museum of Nantes</title>
+                   <subtitle>Nantes</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Fine Arts Museum of Nantes</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://lh3.googleusercontent.com/-rln9tJ1L0Tk/Vun6Pc8wAtI/AAAAAAABQ_g/gXJ-Wznjj3EUqqwDrbwWCYtOhoer71JsQCCo/s1440-Ic42/DSC_0467_2.JPG</image>
+                   <title>Musée des Beaux-Arts de Nîmes</title>
+                   <subtitle>Nîmes</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée des Beaux-Arts de Nîmes</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Mus%C3%A9e_Sainte-Croix_Poitiers.jpg/330px-Mus%C3%A9e_Sainte-Croix_Poitiers.jpg</image>
+                   <title>Musée Sainte-Croix</title>
+                   <subtitle>Poitiers</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée Sainte-Croix</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Mus%C3%A9e_des_beaux_arts_024.JPG/330px-Mus%C3%A9e_des_beaux_arts_024.JPG</image>
+                   <title>Museum of Fine Arts Reims</title>
+                   <subtitle>Reims</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museum of Fine Arts Reims</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Rennes-ancien_Palais_Universitaire-Mus%C3%A9e_des_beaux_arts.JPG/390px-Rennes-ancien_Palais_Universitaire-Mus%C3%A9e_des_beaux_arts.JPG</image>
+                   <title>Museum of Fine Arts of Rennes</title>
+                   <subtitle>Rennes</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museum of Fine Arts of Rennes</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rouen_MdBA.JPG/375px-Rouen_MdBA.JPG</image>
+                   <title>Musée des Beaux-Arts de Rouen</title>
+                   <subtitle>Rouen</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée des Beaux-Arts de Rouen</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Garden_at_Musee_des_Beaux_Arts_in_Tours%2C_France.jpg/300px-Garden_at_Musee_des_Beaux_Arts_in_Tours%2C_France.jpg</image>
+                   <title>Musée des Beaux-Arts de Tours</title>
+                   <subtitle>Tours</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée des Beaux-Arts de Tours</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Troyes_-_Mus%C3%A9e_Saint-Loup_1.jpg/330px-Troyes_-_Mus%C3%A9e_Saint-Loup_1.jpg</image>
+                   <title>Musée des beaux-arts de Troyes</title>
+                   <subtitle>Troyes</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Musée des beaux-arts de Troyes</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Germania ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/St%C3%BClerbau_Sammlung_Berggruen.jpg/330px-St%C3%BClerbau_Sammlung_Berggruen.jpg</image>
+                   <title>Berggruen Museum</title>
+                   <subtitle>Berlin</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Berggruen Museum</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Staedel-Jubilaeum-2015-Ffm-626.jpg/330px-Staedel-Jubilaeum-2015-Ffm-626.jpg</image>
+                   <title>Städel Museum</title>
+                   <subtitle>Frankfurt</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Städel Museum</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Hamburger-kunsthalle-alter-treppenaufgang.jpg/413px-Hamburger-kunsthalle-alter-treppenaufgang.jpg</image>
+                   <title>Hamburger Kunsthalle</title>
+                   <subtitle>Hamburg</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Hamburger Kunsthalle</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Alte_Pinakothek_2009.jpg/330px-Alte_Pinakothek_2009.jpg</image>
+                   <title>Alte Pinakothek</title>
+                   <subtitle>Munchen</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Alte Pinakothek</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Kunstmuseum_Bonn-9592.jpg/525px-Kunstmuseum_Bonn-9592.jpg</image>
+                   <title>Kunstmuseum Bonn</title>
+                   <subtitle>Bonn</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Kunstmuseum Bonn</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Braunschweig_Herzog_Anton_Ulrich_Museum_nachts.jpg/330px-Braunschweig_Herzog_Anton_Ulrich_Museum_nachts.jpg</image>
+                   <title>Herzog Anton Ulrich Museum</title>
+                   <subtitle>Braunschweig</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Herzog Anton Ulrich Museum</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kunsthalle-HB_20110824_img-01.jpg/450px-Kunsthalle-HB_20110824_img-01.jpg</image>
+                   <title>Kunsthalle Bremen</title>
+                   <subtitle>Bremen</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Kunsthalle Bremen</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Dresden-Zwinger-Courtyard.11.JPG/330px-Dresden-Zwinger-Courtyard.11.JPG</image>
+                   <title>Gemäldegalerie Alte Meister</title>
+                   <subtitle>Dresden</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Gemäldegalerie Alte Meister</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Angermuseum_Erfurt2.JPG/330px-Angermuseum_Erfurt2.JPG</image>
+                   <title>Angermuseum</title>
+                   <subtitle>Erfurt</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Angermuseum</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Innenansicht_Museum_Folkwang.JPG/330px-Innenansicht_Museum_Folkwang.JPG</image>
+                   <title>Museum Folkwang</title>
+                   <subtitle>Essen</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museum Folkwang</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Grecia ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Benaki_Museum_Athens.JPG/390px-Benaki_Museum_Athens.JPG</image>
+                   <title>Benaki Museum</title>
+                   <subtitle>Atena</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Benaki Museum</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Ungaria ^</pattern>
+            <template>
+                <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Budapest_Fine_Arts_Museum_R01.jpg/330px-Budapest_Fine_Arts_Museum_R01.jpg</image>
+                   <title>Museum of Fine Arts</title>
+                   <subtitle>Budapesta</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museum of Fine Arts</map></url>
+                   </button>
+               </card>
+               <delay>2</delay>
+               Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Italia ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Pinacoteca_nazionale_di_bologna_00.JPG/330px-Pinacoteca_nazionale_di_bologna_00.JPG</image>
+                   <title>National Art Gallery of Bologna</title>
+                   <subtitle>Bologna</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">National Art Gallery of Bologna</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Florence%2C_Italy_Uffizi_Museum_-_panoramio_%285%29.jpg/330px-Florence%2C_Italy_Uffizi_Museum_-_panoramio_%285%29.jpg</image>
+                   <title>Uffizi Gallery</title>
+                   <subtitle>Florenta</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Uffizi Gallery</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Milano_brera_cortile.jpg/330px-Milano_brera_cortile.jpg</image>
+                   <title>Pinacoteca di Brera</title>
+                   <subtitle>Milano</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Pinacoteca di Brera</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://pilotta.beniculturali.it/new/wp-content/uploads/2018/08/IMG_8057.jpg</image>
+                   <title>Galleria nazionale di Parma</title>
+                   <subtitle>Parma</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Galleria nazionale di Parma</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Galleria_borghese_facade.jpg/330px-Galleria_borghese_facade.jpg</image>
+                   <title>Galleria Borghese</title>
+                   <subtitle>Roma</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Galleria Borghese</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/3324TorinoGalleriaSabauda.jpg/330px-3324TorinoGalleriaSabauda.jpg</image>
+                   <title>Sabauda Gallery</title>
+                   <subtitle>Turin</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Sabauda Gallery</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Musei_Vaticani._Braccio_Nuovo.JPG/360px-Musei_Vaticani._Braccio_Nuovo.JPG</image>
+                   <title>Vatican Museums</title>
+                   <subtitle>Vatican</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Vatican Museums</map></url>
+                   </button>
+               </card>
+               
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Accademia_%28Venice%29.jpg/330px-Accademia_%28Venice%29.jpg</image>
+                   <title>Gallerie dell'Accademia</title>
+                   <subtitle>Venetia</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Gallerie dell'Accademia</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Tarile de Jos ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museumpark_02.JPG/375px-Museumpark_02.JPG</image>
+                   <title>Museum Boijmans Van Beuningen</title>
+                   <subtitle>Rotterdam</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museum Boijmans Van Beuningen</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Museumkwartier_%2C_Amsterdam_%2C_Netherlands_-_panoramio_%289%29.jpg/375px-Museumkwartier_%2C_Amsterdam_%2C_Netherlands_-_panoramio_%289%29.jpg</image>
+                   <title>Van Gogh Museum</title>
+                   <subtitle>Amsterdam</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Van Gogh Museum</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/2010-05-22-den-haag-by-RalfR-48.jpg/375px-2010-05-22-den-haag-by-RalfR-48.jpg</image>
+                   <title>Mauritshuis</title>
+                   <subtitle>Haga</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Mauritshuis</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Polonia ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Budynek%2C_tzw._klasztorek%2C_Krak%C3%B3w.jpg/420px-Budynek%2C_tzw._klasztorek%2C_Krak%C3%B3w.jpg</image>
+                   <title>Princes Czartoryski Museum</title>
+                   <subtitle>Cracovia</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Princes Czartoryski Museum</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Muzeum_Narodowe_w_Warszawie.jpg/330px-Muzeum_Narodowe_w_Warszawie.jpg</image>
+                   <title>Muzeul Național din Varșovia</title>
+                   <subtitle>Varsovia</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Muzeul Național din Varșovia</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Portugalia ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://i.pinimg.com/originals/a0/60/20/a06020c65f695772e2176ae1159c390c.jpg</image>
+                   <title>Museu Nacional de Arte Antiga</title>
+                   <subtitle>Lisabona</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museu Nacional de Arte Antiga</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Rusia ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Gmii.jpg/330px-Gmii.jpg</image>
+                   <title>Pushkin State Museum of Fine Arts</title>
+                   <subtitle>Moscova</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Pushkin State Museum of Fine Arts</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Spb_06-2012_Palace_Embankment_various_14.jpg/405px-Spb_06-2012_Palace_Embankment_various_14.jpg</image>
+                   <title>Hermitage Museum</title>
+                   <subtitle>Sankt Petersburg</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Hermitage Museum</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Serbia ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/8/88/Belgrad_pomnik.jpg</image>
+                   <title>Muzeul Național al Serbiei</title>
+                   <subtitle>Belgrad</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Muzeul Național al Serbiei</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Spania ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/050529_Barcelona_135.jpg/390px-050529_Barcelona_135.jpg</image>
+                   <title>Museu Nacional d'Art de Catalunya</title>
+                   <subtitle>Barcelona</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museu Nacional d'Art de Catalunya</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Bilbao_-_Guggenheim_aurore.jpg/390px-Bilbao_-_Guggenheim_aurore.jpg</image>
+                   <title>Guggenheim Museum Bilbao</title>
+                   <subtitle>Bilbao</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Guggenheim Museum Bilbao</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Madrid-1758045.jpg/405px-Madrid-1758045.jpg</image>
+                   <title>Museo Nacional del Prado</title>
+                   <subtitle>Madrid</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museo Nacional del Prado</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/MuseoBellasArtes_002.jpg/450px-MuseoBellasArtes_002.jpg</image>
+                   <title>Museo de Bellas Artes de Sevilla</title>
+                   <subtitle>Sevilla</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museo de Bellas Artes de Sevilla</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Toledo_Cathedral%2C_from_Plaza_del_Ayuntamiento.jpg/450px-Toledo_Cathedral%2C_from_Plaza_del_Ayuntamiento.jpg</image>
+                   <title>Toledo Cathedral</title>
+                   <subtitle>Toledo</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Toledo Cathedral</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Museu_belles_arts_val%C3%A8ncia2.jpg/375px-Museu_belles_arts_val%C3%A8ncia2.jpg</image>
+                   <title>Museu de Belles Arts de València</title>
+                   <subtitle>Valencia</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museu de Belles Arts de València</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Suedia ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/KonstmuseetGbg.jpg/375px-KonstmuseetGbg.jpg</image>
+                   <title>Gothenburg Museum of Art</title>
+                   <subtitle>Göteborg</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Gothenburg Museum of Art</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Nationalmuseum_kollage_3c.jpg/330px-Nationalmuseum_kollage_3c.jpg</image>
+                   <title>Nationalmuseum</title>
+                   <subtitle>Stockholm</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Nationalmuseum</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Elvetia ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Kunstmuseum_Bern%2C_exterior_view.jpg/450px-Kunstmuseum_Bern%2C_exterior_view.jpg</image>
+                   <title>Kunstmuseum</title>
+                   <subtitle>Berna</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Kunstmuseum</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Kunstmuseum_Solothurn.jpg/450px-Kunstmuseum_Solothurn.jpg</image>
+                   <title>Kunstmuseum Solothurn</title>
+                   <subtitle>Solothurn</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Kunstmuseum Solothurn</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Kunsthaus_Z%C3%BCrich_2011-08-06_17-33-46.jpg/390px-Kunsthaus_Z%C3%BCrich_2011-08-06_17-33-46.jpg</image>
+                   <title>Kunsthaus Zürich</title>
+                   <subtitle>Zürich</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Kunsthaus Zürich</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Ucraina ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BC%D0%B8%D1%81%D1%82%D0%B5%D1%86%D1%82%D0%B2_%D1%96%D0%BC%D0%B5%D0%BD%D1%96_%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD%D0%B0_%D1%82%D0%B0_%D0%92%D0%B0%D1%80%D0%B2%D0%B0%D1%80%D0%B8_%D0%A5%D0%B0%D0%BD%D0%B5%D0%BD%D0%BA%D1%96%D0%B2_%D0%9A%D0%B8%D1%97%D0%B2.JPG/330px-%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BC%D0%B8%D1%81%D1%82%D0%B5%D1%86%D1%82%D0%B2_%D1%96%D0%BC%D0%B5%D0%BD%D1%96_%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD%D0%B0_%D1%82%D0%B0_%D0%92%D0%B0%D1%80%D0%B2%D0%B0%D1%80%D0%B8_%D0%A5%D0%B0%D0%BD%D0%B5%D0%BD%D0%BA%D1%96%D0%B2_%D0%9A%D0%B8%D1%97%D0%B2.JPG</image>
+                   <title>Museum of Western and Oriental Art</title>
+                   <subtitle>Kiev</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Museum of Western and Oriental Art</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/LvivArtGallery.JPG/330px-LvivArtGallery.JPG</image>
+                   <title>Borys Voznytsky Lviv National Art Gallery</title>
+                   <subtitle>Liov</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Borys Voznytsky Lviv National Art Gallery</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/51-101-1052_001_Odesa_reg.jpg/300px-51-101-1052_001_Odesa_reg.jpg</image>
+                   <title>Odessa Museum of Western and Eastern Art</title>
+                   <subtitle>Odesa</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Odessa Museum of Western and Eastern Art</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Regatul Unit ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Birmingham_Museum_and_Art_Gallery_from_the_Central_Library.jpg/360px-Birmingham_Museum_and_Art_Gallery_from_the_Central_Library.jpg</image>
+                   <title>Birmingham Museum and Art Gallery</title>
+                   <subtitle>Birmingham</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Birmingham Museum and Art Gallery</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/FitzwilliamMuseum.jpg/375px-FitzwilliamMuseum.jpg</image>
+                   <title>Fitzwilliam Museum</title>
+                   <subtitle>Cambridge</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Fitzwilliam Museum</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/National_Gallery_of_Scotland_restitch1_2005-08-07.jpg/374px-National_Gallery_of_Scotland_restitch1_2005-08-07.jpg</image>
+                   <title>Scottish National Gallery</title>
+                   <subtitle>Edinburgh</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Scottish National Gallery</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Kelvingrove_Art_Gallery_and_Museum_1.jpg/375px-Kelvingrove_Art_Gallery_and_Museum_1.jpg</image>
+                   <title>Kelvingrove Art Gallery and Museum</title>
+                   <subtitle>Glasgow</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Kelvingrove Art Gallery and Museum</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Walker_Art_Gallery%2C_Liverpool_161009.JPG/330px-Walker_Art_Gallery%2C_Liverpool_161009.JPG</image>
+                   <title>Walker Art Gallery</title>
+                   <subtitle>Liverpool</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Walker Art Gallery</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Galer%C3%ADa_Nacional%2C_Londres%2C_Inglaterra%2C_2014-08-07%2C_DD_035.JPG/330px-Galer%C3%ADa_Nacional%2C_Londres%2C_Inglaterra%2C_2014-08-07%2C_DD_035.JPG</image>
+                   <title>National Gallery</title>
+                   <subtitle>Londra</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">National Gallery</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ashmolean_Museum_in_July_2014.jpg/330px-Ashmolean_Museum_in_July_2014.jpg</image>
+                   <title>Ashmolean Museum</title>
+                   <subtitle>Oxford</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Ashmolean Museum</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ Romania ^</pattern>
+            <template>
+                <carousel>
+                    <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Muzeul_National_de_Arta%2C_Bucuresti.jpg/420px-Muzeul_National_de_Arta%2C_Bucuresti.jpg</image>
+                   <title>Muzeul National de Arta al Romaniei</title>
+                   <subtitle>Bucuresti</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Muzeul National de Arta al Romaniei</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Art_Museum_Brasov.jpg/375px-Art_Museum_Brasov.jpg</image>
+                   <title>Muzeul de Arta Brasov</title>
+                   <subtitle>Brasov</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Muzeul de Arta Brasov</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/B%C3%A1nffy_Palace_in_Kluj-Napoca.PNG/525px-B%C3%A1nffy_Palace_in_Kluj-Napoca.PNG</image>
+                   <title>Palatul Banffy cu Muzeul National de Arta din Cluj</title>
+                   <subtitle>Cluj</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Palatul Banffy cu Muzeul National de Arta din Cluj</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://www.litoralulromanesc.ro/application/views/images/obiective%20turistice/23__muzeul_de_arta.jpg</image>
+                   <title>Muzeul de Arta din Constanta</title>
+                   <subtitle>Constanta</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Muzeul de Arta din Constanta</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://www.viata-libera.ro/media/k2/items/cache/431c9eb8552b48687b23c3732746138a_XL.jpg</image>
+                   <title>Muzeul de Arta Vizuala din Galati</title>
+                   <subtitle>Galati</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Muzeul de Arta Vizuala din Galati</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Palatul_Culturii_Ia%C8%99i.jpg/420px-Palatul_Culturii_Ia%C8%99i.jpg</image>
+                   <title>Muzeul de Arta din Palatul Culturii Iasi</title>
+                   <subtitle>Iasi</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Muzeul de Arta din Palatul Culturii Iasi</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Palatul_Brukenthal_din_Piata_Mare.jpg/450px-Palatul_Brukenthal_din_Piata_Mare.jpg</image>
+                   <title>Muzeul Brukenthal Sibiu</title>
+                   <subtitle>Sibiu</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Muzeul Brukenthal Sibiu</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/MuzeuArta_Timisoara.jpg/420px-MuzeuArta_Timisoara.jpg</image>
+                   <title>Muzeul de Arta Timisoara</title>
+                   <subtitle>Timisoara</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Muzeul de Arta Timisoara</map></url>
+                   </button>
+               </card>
+               <card>
+                   <image>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Muzeul_Jude%C5%A3ean_din_Suceava.jpg/420px-Muzeul_Jude%C5%A3ean_din_Suceava.jpg</image>
+                   <title>Muzeul Bucovinei</title>
+                   <subtitle>Suceava</subtitle>
+                   <button>
+                       <text>Apasa pentru a afla mai multe! 😊</text>
+                       <url><map name="linkmuzeu">Muzeul Bucovinei</map></url>
+                   </button>
+               </card>
+                </carousel>
+                <delay>2</delay>
+                Mi-a facut placere sa discut cu tine, sper ca ti-am fost de ajutor. Daca doresti sa vezi si muzeele din alte tari, te rog sa alegi una din cele de mai sus. De asemenea ma poti invata ce a pictat Leonardo da Vinci, sunt curios!<break/> La revedere!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ da Vinci a pictat *</pattern>
+            <template><image>assets/img/about/invatare.jpg</image>
+                Cat de interesant!
+                <learn>
+                    <category>
+                        <pattern>Ce a pictat Leonardo da Vinci</pattern>
+                        <template><image>assets/img/about/amintire.jpg</image>
+                            Mi-ai spus ca Leonardo da Vinci a pictat <formal><eval><star index="2"/></eval></formal>.
+                        </template>
+                    </category>
+                </learn>
+            </template>
+        </category>
+        
+        <category>
+            <pattern>*</pattern>
+            <template>Va rog sa alegeti una din tarile de mai sus!</template>
+        </category>
+        
+        <category>
+            <pattern><set>larevedere</set></pattern>
+            <template>Pa pa! Saluta-ma din nou data viitoare cand vei vrea sa iti arat cateva muzee!<set topic="name"></set>
+            <image>assets/img/about/1.jpg</image>
+            </template>
+        </category>
+        
+        
+    </topic>
+	
+</aiml>
